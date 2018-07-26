@@ -17,6 +17,10 @@ class SideBar extends Component {
                 <Link to="/CreateNote">
                     <button className="button">+ Create New Note</button>
                 </Link>
+
+                <Link to='/RegisterUser'>
+                    <button className="button">+ SignUp!</button>
+                </Link>
             </div>
         );
     }

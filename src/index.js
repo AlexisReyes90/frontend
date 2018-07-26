@@ -15,6 +15,7 @@ import CreateContainer from './Components/CreateContainer';
 import SideBar from './Components/SideBar';
 import Note from './Components/Note';
 import EditNote from './Components/EditNote';
+import SignUp from './Components/SignUp';
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger))
 
@@ -27,6 +28,7 @@ ReactDOM.render(
                 <Route path="/CreateNote" component={CreateContainer}/>
                 <Route path="/Note/:id" component={Note}/>
                 <Route path="/EditNote" component={EditNote}/>
+                <Route path='/RegisterUser' component={SignUp}/>
             </div>
         </Router>
     </Provider>

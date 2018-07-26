@@ -36,6 +36,19 @@ export const postNote = (newNoteObj) => {
     }
 }
 
+// axios.post new user
+
+export const createUser = (newUser) => {
+    return dispatch => {
+        dispatch({ type: LOADING });
+        axios
+            .post('http://localhost:5000/register', newUser)
+            .then(response => {
+                dispatch({ type: SUCCESS })
+            })
+    }
+}
+
 //axios.delete config
 
 export const deleteNote = (id) => {
