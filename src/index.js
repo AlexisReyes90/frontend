@@ -16,6 +16,7 @@ import SideBar from './Components/SideBar';
 import Note from './Components/Note';
 import EditNote from './Components/EditNote';
 import SignUp from './Components/SignUp';
+import LogIn from './Components/LogIn';
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger))
 
@@ -29,6 +30,7 @@ ReactDOM.render(
                 <Route path="/Note/:id" component={Note}/>
                 <Route path="/EditNote" component={EditNote}/>
                 <Route path='/RegisterUser' component={SignUp}/>
+                <Route path='/LogIn' component={LogIn}/>
             </div>
         </Router>
     </Provider>

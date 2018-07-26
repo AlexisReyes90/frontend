@@ -49,6 +49,19 @@ export const createUser = (newUser) => {
     }
 }
 
+//axios log in user
+
+export const login = (user) => {
+    return dispatch => {
+        dispatch({ type: LOADING });
+        axios
+            .post('http://localhost:5000/user/login', user)
+            .then(response => {
+                dispatch({ type: SUCCESS })
+            })
+    }
+}
+
 //axios.delete config
 
 export const deleteNote = (id) => {
