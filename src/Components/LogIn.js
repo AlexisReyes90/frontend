@@ -17,7 +17,7 @@ class LogIn extends Component {
         const { username, password } = this.state;
 
         e.preventDefault()
-        this.props.createUser({ username, password });
+        this.props.login({ username, password });
         this.setState({ username: '', password: '' })
         this.props.history.push('/');
     }
