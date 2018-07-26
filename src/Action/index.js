@@ -51,11 +51,11 @@ export const createUser = (newUser) => {
 
 //axios log in user
 
-export const login = (user) => {
+export const login = ({ username, password }) => {
     return dispatch => {
         dispatch({ type: LOADING });
         axios
-            .post('http://localhost:5000/user/login', user)
+            .post('http://localhost:5000/user/login', { username, password })
             .then(response => {
                 dispatch({ type: SUCCESS })
             })
