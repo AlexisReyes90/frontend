@@ -26,10 +26,10 @@ class SignUp extends Component {
         return(
         <div>
            <div> Register </div>
-           <form onSubmit={this.handlSubmit}>
+           <form>
             <input name="username" placeholder="Username" value={this.state.username} onChange={this.handleInputChange}/>
             <input name="password" placeholder="Password" value={this.state.password} onChange={this.handleInputChange}/>
-            <button type="submit">SignUp!</button>
+            <button onClick={this.handleSubmit} className="save-button">SignUp!</button>
            </form>
         </div> 
         );
