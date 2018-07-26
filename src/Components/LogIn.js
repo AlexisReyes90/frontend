@@ -29,7 +29,7 @@ class LogIn extends Component {
            <form>
             <input name="username" placeholder="Username" value={this.state.username} onChange={this.handleInputChange}/>
             <input name="password" placeholder="Password" value={this.state.password} onChange={this.handleInputChange}/>
-            <button onClick={this.handleSubmit} className="save-button">SignUp!</button>
+            <button onClick={this.handleSubmit} className="save-button">Sign in!</button>
            </form>
         </div> 
         );
